@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
         <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!-- päis -->
@@ -55,7 +56,8 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                    </li> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
                 </ul>
                 <!-- search -->
                 <form class="form-inline m-2 my-lg-0">
@@ -106,20 +108,99 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                    <!-- TODO! --->
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputFirstName">Eesnimi</label>
+                                    <input type="email" class="form-control" id="inputFirstName" placeholder="Kaja">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputLastName">Perekonnanimi</label>
+                                    <input type="password" class="form-control" id="inputLastName" placeholder="Kuusik">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Aadress</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Liivi 2">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Aadress 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="ruum 203">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">Linn</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Maakond</label>
+                                    <select id="inputState" class="form-control">
+                                        <option>Harjumaa</option>
+                                        <option selected>Tartumaa</option>
+                                        <option>Viljandimaa</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Postiindeks</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Kinnita
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Valmis</button>
+                        </form>
                     </div>           
                 </div>   
             </div>
         </section>
         <!-- jalus -->
-        <footer class="bg-light">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- TODO! -->
-                    <div class="col-lg-12 text-center"><p>Footer</p></div>
+        <footer class="page-footer font-small indigo">
+            <div class="container text-center">
+
+                <h5 class="font-weight-bold text-uppercase mb-4">Kontakt</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <i class="fa fa-home mr-3"></i>Tartu, Liivi-2, 55555</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i>seebid@seep.ee</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i>+372 555 5555</p>
+                    </li>
+                </ul>
+                <div class="mb-5 flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fa fa-facebook-f fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fa fa-twitter fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!--Pinterest-->
+                    <a class="pin-ic">
+                        <i class="fa fa-pinterest fa-lg white-text"> </i>
+                    </a>
                 </div>
             </div>
-        </footer>       
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> Bootstrap4.ee</a>
+            </div>
+        </footer>
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
